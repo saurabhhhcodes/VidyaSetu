@@ -14,7 +14,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [err, setErr] = useState<string>('');
-  const router = useRouter();                                              
+  const router = useRouter();
 
   const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -159,12 +159,28 @@ export default function LoginPage() {
       </div>
       <div className="flex-1 h-screen pr-10 pt-2">
         <div className="flex justify-between items-center px-4">
-          <a href="/" className="text-button text-[14px] hover:underline flex items-center gap-1">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          <a
+            href="/"
+            className="text-button text-[14px] hover:underline flex items-center gap-1"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="19" y1="12" x2="5" y2="12" />
+              <polyline points="12 19 5 12 12 5" />
+            </svg>
             Back to Home
           </a>
           <p className="text-[14px]">
-            Need help? <span className="pl-2 text-button"> Contact Support</span>
+            Need help?{' '}
+            <span className="pl-2 text-button"> Contact Support</span>
           </p>
         </div>
 
@@ -243,7 +259,9 @@ export default function LoginPage() {
                 <div className="gap-2 flex flex-col">
                   <div className="flex justify-between items-center">
                     <label htmlFor="password"> Password</label>
-                    <p className="text-button text-[14px] cursor-pointer select-none">Forgot password?</p>
+                    <p className="text-button text-[14px] cursor-pointer select-none">
+                      Forgot password?
+                    </p>
                   </div>
 
                   <Input
