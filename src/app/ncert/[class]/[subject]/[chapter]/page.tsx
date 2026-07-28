@@ -48,20 +48,11 @@ export default function NcertChapterPage() {
     return <ChapterPageSkeleton />;
   }
 
-  
-
-  console.log(chapter)
+  console.log(chapter);
   return (
-    <main className='flex '>
-      <div className='flex-1'>
-        will come soon here 
-
-      </div>
-      <div className='flex-1'>
-
-      </div>
+    <main className="flex ">
+      <div className="flex-1">will come soon here</div>
+      <div className="flex-1"></div>
     </main>
   );
 }
-
-
