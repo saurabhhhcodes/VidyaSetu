@@ -180,7 +180,9 @@ export default function DashboardPage() {
       {/* top */}
       <div className="flex justify-between">
         <div>
-          <p className="text-3xl font-bold">Welcome back, {user?.name ? user.name: user?.email.split("@")[0]}!</p>
+          <p className="text-3xl font-bold">
+            Welcome back, {user?.name ? user.name : user?.email.split('@')[0]}!
+          </p>
 
           <p className="text-[14px] text-accent  font-light ">
             Focus remains your greatest asset. Continue your curriculum below.
@@ -258,14 +260,14 @@ export default function DashboardPage() {
 
       {/* performance history */}
 
-      <div className='flex flex-col gap-4 w-full h-full flex-1'>
+      <div className="flex flex-col gap-4 w-full h-full flex-1">
         <div className="flex justify-between font-bold uppercase text-[12px]">
           <div>performance history </div>
           <a href="">view archive</a>
         </div>
 
-        <div className='bg-accent/40 flex-1 h-full flex justify-center items-center cursor-pointer hover:bg-accent/20 transition-all duration-300'>
-          <p className='font-semibold  '>NO RECORDS YET</p>
+        <div className="bg-accent/40 flex-1 h-full flex justify-center items-center cursor-pointer hover:bg-accent/20 transition-all duration-300">
+          <p className="font-semibold  ">NO RECORDS YET</p>
         </div>
 
         {/* <table>
